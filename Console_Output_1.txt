@@ -1,0 +1,178 @@
+C:\Windows\System32>cd C:/platform-tools
+
+C:\platform-tools>python bot.py
+Output folder: calibration_output\20260930_084634
+CAL|adb_devices|List of devices attached ; RZCXB1AVG6L  device
+CAL|wm_size|Physical size: 1440x3120
+CAL|wm_density|Physical density: 600
+CAL|screen_size|1440x3120
+CAL|cell_size|156.25x171.25
+CAL|slot1|bbox=(175, 2464, 450, 2535)|size=(275,71)|area=17716|centroid=(312.9,2499.8)|slot_centre=(240, 2550)
+CAL|slot2|bbox=(647, 2391, 793, 2605)|size=(146,214)|area=17288|centroid=(702.2,2481.0)|slot_centre=(720, 2550)
+CAL|slot3|bbox=(1013, 2427, 1228, 2572)|size=(215,145)|area=25738|centroid=(1120.6,2500.9)|slot_centre=(1200, 2550)
+
+Mode: RETURN  (pieces are NOT placed)
+11 experiments queued.
+Press ENTER to start (Ctrl+C to abort)...
+
+======================================================================
+EXPERIMENT A_big_center: baseline: big piece grabbed at centre
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(720, 1485)
+  --- metrics ---
+CAL|A_big_center|start=(1121, 2516)|target=(720, 1485)|grab_frac=(0.5, 0.5)|slot=3
+CAL|A_big_center|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|A_big_center|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|A_big_center|lift_bbox=[319, 670, 801, 992]|size=[482, 322]|scale_vs_tray=[2.242, 2.221]
+CAL|A_big_center|finger_to_lift_center=[-160.0, -654.0]|to_topleft=[-401, -815]|to_botright=[81, -493]
+CAL|A_big_center|finger_cell(r,c)=[4.0, 4.0]|lift_topleft_cell(r,c)=[-0.76, 1.43]|offscreen_right_px=0
+CAL|A_big_center|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT B_big_topleft: same target, grabbed near top-left -> does lifted piece follow grab offset?
+======================================================================
+  slot=3  grab_frac=(0.2, 0.2)  start(finger)=(1056, 2456)  target(finger)=(720, 1485)
+  --- metrics ---
+CAL|B_big_topleft|start=(1056, 2456)|target=(720, 1485)|grab_frac=(0.2, 0.2)|slot=3
+CAL|B_big_topleft|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|B_big_topleft|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|B_big_topleft|lift_bbox=[409, 745, 892, 1066]|size=[483, 321]|scale_vs_tray=[2.247, 2.214]
+CAL|B_big_topleft|finger_to_lift_center=[-69.5, -579.5]|to_topleft=[-311, -740]|to_botright=[172, -419]
+CAL|B_big_topleft|finger_cell(r,c)=[4.0, 4.0]|lift_topleft_cell(r,c)=[-0.32, 2.01]|offscreen_right_px=0
+CAL|B_big_topleft|tray_restored=False|mean_diff=16.9
+
+======================================================================
+EXPERIMENT B2_big_botright: same target, grabbed near bottom-right
+======================================================================
+  slot=3  grab_frac=(0.8, 0.8)  start(finger)=(1185, 2543)  target(finger)=(720, 1485)
+  --- metrics ---
+CAL|B2_big_botright|start=(1185, 2543)|target=(720, 1485)|grab_frac=(0.8, 0.8)|slot=3
+CAL|B2_big_botright|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|B2_big_botright|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|B2_big_botright|lift_bbox=[229, 638, 711, 958]|size=[482, 320]|scale_vs_tray=[2.242, 2.207]
+CAL|B2_big_botright|finger_to_lift_center=[-250.0, -687.0]|to_topleft=[-491, -847]|to_botright=[-9, -527]
+CAL|B2_big_botright|finger_cell(r,c)=[4.0, 4.0]|lift_topleft_cell(r,c)=[-0.95, 0.86]|offscreen_right_px=0
+CAL|B2_big_botright|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT C_small_center: different piece, same target -> anchor = centre or corner?
+======================================================================
+  slot=2  grab_frac=(0.5, 0.5)  start(finger)=(704, 2498)  target(finger)=(720, 1485)
+  --- metrics ---
+CAL|C_small_center|start=(704, 2498)|target=(720, 1485)|grab_frac=(0.5, 0.5)|slot=2
+CAL|C_small_center|tray_piece_bbox=[647, 2391, 793, 2605]|size=[146, 214]
+CAL|C_small_center|pickup_union_bbox=[558, 1879, 882, 2608]|size=[324, 729]
+CAL|C_small_center|lift_bbox=[583, 614, 904, 1095]|size=[321, 481]|scale_vs_tray=[2.199, 2.248]
+CAL|C_small_center|finger_to_lift_center=[23.5, -630.5]|to_topleft=[-137, -871]|to_botright=[184, -390]
+CAL|C_small_center|finger_cell(r,c)=[4.0, 4.0]|lift_topleft_cell(r,c)=[-1.09, 3.12]|offscreen_right_px=0
+CAL|C_small_center|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT D_big_center_dx: finger moved +1 cell width
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(876, 1485)
+  --- metrics ---
+CAL|D_big_center_dx|start=(1121, 2516)|target=(876, 1485)|grab_frac=(0.5, 0.5)|slot=3
+CAL|D_big_center_dx|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|D_big_center_dx|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|D_big_center_dx|lift_bbox=[536, 670, 1018, 992]|size=[482, 322]|scale_vs_tray=[2.242, 2.221]
+CAL|D_big_center_dx|finger_to_lift_center=[-99.0, -654.0]|to_topleft=[-340, -815]|to_botright=[142, -493]
+CAL|D_big_center_dx|finger_cell(r,c)=[4.0, 5.0]|lift_topleft_cell(r,c)=[-0.76, 2.82]|offscreen_right_px=0
+CAL|D_big_center_dx|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT E_big_center_dy: finger moved +1 cell height
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(720, 1656)
+  --- metrics ---
+CAL|E_big_center_dy|start=(1121, 2516)|target=(720, 1656)|grab_frac=(0.5, 0.5)|slot=3
+CAL|E_big_center_dy|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|E_big_center_dy|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|E_big_center_dy|lift_bbox=[319, 884, 801, 1205]|size=[482, 321]|scale_vs_tray=[2.242, 2.214]
+CAL|E_big_center_dy|finger_to_lift_center=[-160.0, -611.5]|to_topleft=[-401, -772]|to_botright=[81, -451]
+CAL|E_big_center_dy|finger_cell(r,c)=[5.0, 4.0]|lift_topleft_cell(r,c)=[0.49, 1.43]|offscreen_right_px=0
+CAL|E_big_center_dy|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT F_edge_right: finger just inside right board edge
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(1335, 1485)
+  --- metrics ---
+CAL|F_edge_right|start=(1121, 2516)|target=(1335, 1485)|grab_frac=(0.5, 0.5)|slot=3
+CAL|F_edge_right|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|F_edge_right|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|F_edge_right|lift_bbox=[1178, 670, 1440, 992]|size=[262, 322]|scale_vs_tray=[1.219, 2.221]
+CAL|F_edge_right|finger_to_lift_center=[-26.0, -654.0]|to_topleft=[-157, -815]|to_botright=[105, -493]
+CAL|F_edge_right|finger_cell(r,c)=[4.0, 7.94]|lift_topleft_cell(r,c)=[-0.76, 6.93]|offscreen_right_px=0
+CAL|F_edge_right|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT F2_beyond_right: finger 60px outside right board edge -> clamping?
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(1405, 1485)
+  --- metrics ---
+CAL|F2_beyond_right|start=(1121, 2516)|target=(1405, 1485)|grab_frac=(0.5, 0.5)|slot=3
+CAL|F2_beyond_right|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|F2_beyond_right|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|F2_beyond_right|lift_bbox=[1278, 670, 1440, 992]|size=[162, 322]|scale_vs_tray=[0.753, 2.221]
+CAL|F2_beyond_right|finger_to_lift_center=[-46.0, -654.0]|to_topleft=[-127, -815]|to_botright=[35, -493]
+CAL|F2_beyond_right|finger_cell(r,c)=[4.0, 8.38]|lift_topleft_cell(r,c)=[-0.76, 7.57]|offscreen_right_px=0
+CAL|F2_beyond_right|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT G_edge_left: finger just inside left board edge
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(105, 1485)
+  --- metrics ---
+CAL|G_edge_left|start=(1121, 2516)|target=(105, 1485)|grab_frac=(0.5, 0.5)|slot=3
+CAL|G_edge_left|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|G_edge_left|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|G_edge_left|lift_bbox=[0, 670, 240, 992]|size=[240, 322]|scale_vs_tray=[1.116, 2.221]
+CAL|G_edge_left|finger_to_lift_center=[15.0, -654.0]|to_topleft=[-105, -815]|to_botright=[135, -493]
+CAL|G_edge_left|finger_cell(r,c)=[4.0, 0.06]|lift_topleft_cell(r,c)=[-0.76, -0.61]|offscreen_right_px=0
+CAL|G_edge_left|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT H_edge_top: finger just inside top board edge
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(720, 810)
+  --- metrics ---
+CAL|H_edge_top|start=(1121, 2516)|target=(720, 810)|grab_frac=(0.5, 0.5)|slot=3
+CAL|H_edge_top|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|H_edge_top|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|H_edge_top|lift_bbox=[319, 360, 801, 680]|size=[482, 320]|scale_vs_tray=[2.242, 2.207]
+CAL|H_edge_top|finger_to_lift_center=[-160.0, -290.0]|to_topleft=[-401, -450]|to_botright=[81, -130]
+CAL|H_edge_top|finger_cell(r,c)=[0.06, 4.0]|lift_topleft_cell(r,c)=[-2.57, 1.43]|offscreen_right_px=0
+CAL|H_edge_top|extra_hover_components=[{'bbox': [694, 528, 745, 606], 'area': 3261}]  (snap preview / ghost?)
+CAL|H_edge_top|tray_restored=True|mean_diff=0.0
+
+======================================================================
+EXPERIMENT I_edge_bottom: finger just inside bottom board edge
+======================================================================
+  slot=3  grab_frac=(0.5, 0.5)  start(finger)=(1121, 2516)  target(finger)=(720, 2160)
+  --- metrics ---
+CAL|I_edge_bottom|start=(1121, 2516)|target=(720, 2160)|grab_frac=(0.5, 0.5)|slot=3
+CAL|I_edge_bottom|tray_piece_bbox=[1013, 2427, 1228, 2572]|size=[215, 145]
+CAL|I_edge_bottom|pickup_union_bbox=[880, 1959, 1362, 2571]|size=[482, 612]
+CAL|I_edge_bottom|lift_bbox=[319, 1515, 801, 1836]|size=[482, 321]|scale_vs_tray=[2.242, 2.214]
+CAL|I_edge_bottom|finger_to_lift_center=[-160.0, -484.5]|to_topleft=[-401, -645]|to_botright=[81, -324]
+CAL|I_edge_bottom|finger_cell(r,c)=[7.94, 4.0]|lift_topleft_cell(r,c)=[4.18, 1.43]|offscreen_right_px=0
+CAL|I_edge_bottom|tray_restored=True|mean_diff=0.0
+
+======================================================================
+SUMMARY (paste this block back)
+======================================================================
+name                   finger->centre    finger->topleft          scale   top-left cell(r,c)
+A_big_center         [-160.0, -654.0]       [-401, -815] [2.242, 2.221]        [-0.76, 1.43]
+B_big_topleft         [-69.5, -579.5]       [-311, -740] [2.247, 2.214]        [-0.32, 2.01]
+B2_big_botright      [-250.0, -687.0]       [-491, -847] [2.242, 2.207]        [-0.95, 0.86]
+C_small_center         [23.5, -630.5]       [-137, -871] [2.199, 2.248]        [-1.09, 3.12]
+D_big_center_dx       [-99.0, -654.0]       [-340, -815] [2.242, 2.221]        [-0.76, 2.82]
+E_big_center_dy      [-160.0, -611.5]       [-401, -772] [2.242, 2.214]         [0.49, 1.43]
+F_edge_right          [-26.0, -654.0]       [-157, -815] [1.219, 2.221]        [-0.76, 6.93]
+F2_beyond_right       [-46.0, -654.0]       [-127, -815] [0.753, 2.221]        [-0.76, 7.57]
+G_edge_left            [15.0, -654.0]       [-105, -815] [1.116, 2.221]       [-0.76, -0.61]
+H_edge_top           [-160.0, -290.0]       [-401, -450] [2.242, 2.207]        [-2.57, 1.43]
+I_edge_bottom        [-160.0, -484.5]       [-401, -645] [2.242, 2.214]         [4.18, 1.43]
+
+Done. Send me: (1) this console output, and (2) the folder 'calibration_output\20260930_084634' (at least results.json and the *_2_hover.png images).
